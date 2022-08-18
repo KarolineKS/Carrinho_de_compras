@@ -31,6 +31,6 @@ describe('2 - Teste a função fetchItem', () => {
   it('4 - Verificar se ao chamar a função `fetchItem` sem argumento retorna um erro com a mensagem `You must provide an url`', async () => {
     expect.assertions(1);
     const chamadaFunção = await fetchItem();
-    expect(chamadaFunção).toThrowError(new Error(`You must provide an url`));
+    expect(chamadaFunção).toEqual(new Error('You must provide an url'));
   });
 });
