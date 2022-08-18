@@ -25,15 +25,11 @@ describe('1 - Teste a função fetchProducts', () => {
   it('4 - Verifica se a função `fetchProducts` com argumento `computador` retorna o objeto esperado', async () => {
     expect.assertions(1);
     const retorno = await fetchProducts('computador');
-    expect(retorno).toBe(computadorSearch);
+    expect(retorno).toEqual(computadorSearch);
   })
 
   it('5 - Verifica se a função `fetchProducts` sem argumento retorna um erro com a mensagem `You must provide an url`', async () => {
-    try{
-      expect.assertions(1);
-      await fetchProducts('computador')
-    } catch (error) {
-      expect (error).toEqual(new Error ('You must provide an url'))
-    }
+    expect (await fetchProducts()).toEqual(new Error ('You must provide an url'))
+    expect.assertions(1)
   })
 });
