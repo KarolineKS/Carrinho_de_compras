@@ -94,13 +94,13 @@ body {
 .item {
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 200;
   margin: 15px;
   width: 200px;
   border: 2px solid rgb(234, 234, 233);
   border-radius: 5px;
   box-sizing: border-box;
-  box-shadow: 7px 8px 5px black;
+  box-shadow: 7px 8px 5px rgba(0, 0, 0, 0.514);
 }
 
 .item .item__sku {
@@ -183,4 +183,5 @@ body {
   padding: 10px;
   margin-top: 15px;
   padding-left: 18px;
+  font-weight: 900;
 }
