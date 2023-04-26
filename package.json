@@ -9,7 +9,7 @@
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "build": "mkdir dist && cp index.html style.css script.js helpers/* dist/",
+    "build": "mkdir dist && cp index.html style.css script.js dist/ && cp -r helpers/* dist/",
     "deploy": "gh-pages -d dist"
   },
   "jest": {
