@@ -1,0 +1,43 @@
+{
+  "name": "carrinho_de_compras",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "jest-environment-jsdom",
+    "coverageReporters": [
+      "text",
+      "html"
+    ],
+    "collectCoverageFrom": [
+      "**/helpers/**"
+    ],
+    "testMatch": [
+      "**/tests/**/*.test.js?(x)"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarolineKS/Carrinho_de_compras.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarolineKS/Carrinho_de_compras/issues"
+  },
+  "homepage": "https://github.com/KarolineKS/Carrinho_de_compras#readme",
+  "dependencies": {
+    "jest": "^29.5.0"
+  },
+  "devDependencies": {
+    "jest-environment-jsdom": "^29.5.0"
+  }
+}
